@@ -1,0 +1,95 @@
+body .wiese {
+  background-image: url(haus.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  animation-name: wiese;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
+}
+@keyframes wiese {
+  0% {
+    filter: brightness(0.2);
+  }
+  
+  50% {
+    filter: brightness(1);
+  }
+  
+  100% {
+    filter: brightness(0.2);
+  }
+}
+p {
+  width: 400px;
+  height: 100px;
+  padding: 15px;
+}
+body .sonne {
+  position: absolute;
+  background-image: url(sun.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 80px;
+  height: 80px;
+  z-index: 1;
+  animation-name: sonne;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-iteration-count: infinite;
+  animation-fill-mode: forwards;
+  animation-direction: alternate-reverse;
+}
+
+@keyframes sonne {
+  0% {
+    top: 45%;
+    right: 18%;
+  }
+  50% {
+    top: 8%;
+    right: 50%;
+  }
+  100% {
+    top: 45%;
+    right: 85%;
+  }
+}
+body .wiese .haus {
+  position: absolute;
+  top: 37%;
+  right: 15%;
+  background-image: url(icon-haus.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  width: 250px;
+  height: 250px;
+}
+body .baum {
+  position: absolute;
+  top: 25%;
+  left: 0%;
+  background-image: url(baum.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  width: 300px;
+  height: 300px;
+}
+body .baum1 {
+  position: absolute;
+  top: 45%;
+  left: 5%;
+  background-image: url(baum.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: 2;
+  width: 200px;
+  height: 200px;
+}
